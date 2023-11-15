@@ -1,0 +1,58 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+
+.character {
+  margin-right: auto;
+  margin-left: 0;
+
+}
+.character #character {
+  width: 25em;
+  
+}
+
+#Line {
+
+  background-color: #7494c0;
+  position: relative;
+  
+}
+
+.myQuestion {
+  background-color: #8de055;
+  border-radius: 10px;
+  padding: 0.3em;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 0.5em;
+  width:fit-content;
+  max-width: 60%;
+  position: relative;
+  right: 5px;
+}
+
+.gptResponse {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 0.3em;
+  margin-right: auto;
+  margin-left: 0;
+  margin-top: 0.5em;
+  
+  width:fit-content;
+  max-width: 60%;
+  position: relative;
+  left: 15px;
+  
+}
+
+
+#user-click {
+  display: flex;
+  justify-content: end;
+}
+#use-clilck input {
+  width: 50%;
+}
