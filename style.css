@@ -4,7 +4,16 @@
 h2 {
   background-color: #273246;
   text-align: center;
-  
+  color: white;
+  margin-bottom: 0;
+}
+div.gptoutput {
+  background-color: #273246;
+  color: white;
+}
+div.character {
+  background-color: #273246;
+  color: white;
 }
 
 .character {
