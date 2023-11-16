@@ -30,7 +30,7 @@ recognition.onresult = async({ results }) => {//音声認識のテキストが�
   gptResponse.innerText = responseText;//output(入力欄の下にgptの返答が返される。)
   document.getElementById('Line').appendChild(gptResponse);
 
-  await createAudio(responseText);//レスポンステキストが返ってきたら読み上げる。
+  // await createAudio(responseText);//レスポンステキストが返ってきたら読み上げる。
 };
 //音声認識開始
 const startButton = document.querySelector(".start");
@@ -80,7 +80,7 @@ sendButton.addEventListener("click", async () => {
   console.log(responseText)
   gptResponse.innerText = responseText;//output(入力欄の下にgptの返答が返される。)
   document.getElementById('Line').appendChild(gptResponse);
-  await createAudio(responseText);//レスポンステキストが返ってきたら読み上げる。
+  // await createAudio(responseText);//レスポンステキストが返ってきたら読み上げる。
 });
 
 //chatgptに投げる関数
@@ -153,6 +153,7 @@ console.log(api_key1);
     role: "assistant",
     content: response.data.choices[0].message.content,
   });
+  createAudio(response.data.choices[0].message.content);
 
   return response.data.choices[0].message.content;
 }
