@@ -1,7 +1,11 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
-
+h2 {
+  background-color: #273246;
+  text-align: center;
+  
+}
 
 .character {
   margin-right: auto;
