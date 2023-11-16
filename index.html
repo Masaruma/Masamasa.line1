@@ -17,7 +17,7 @@
     <h2>chatGPTとLineする。</h2>
     <!-- gptのアウトプットが入ってくる -->
     <div class="myinput"></div>
-    <div class="gptoutput">パスワードを入れてください：<input type="text" name="pass" id="pass"></div>
+    <div class="gptoutput">パスワードを入れてください：<input type="text" name="pass" id="pass"></div><label><input class="sound" type="checkbox" checked/>音声</label>
       <div class="character">性格を入力。初期設定はメイドです。<input type="text" name="character" id="character" placeholder="あなたは～な人です。絵文字をたくさん使います。"></div>
     <div id="Line">
       <div class="gptResponse">始めるには文字を入力するか🎤を押して話しかけてね。</div>
@@ -25,7 +25,7 @@
 
     <div id="user-click">
       <button id="speak-btn">再生</button>
-      <label><input class="sound" type="checkbox" checked/>音声</label>
+      
       <button type="button" class="start">🎤</button>  
       <button type="button" class="stop">■</button>
       <div></div>
