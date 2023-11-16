@@ -166,13 +166,13 @@ function createAudio(text) {
   //投げる文章
   //uttr.text = text;
   // 言語 (日本語:ja-JP, アメリカ英語:en-US, イギリス英語:en-GB, 中国語:zh-CN, 韓国語:ko-KR)
-  uttr.lang = "ja-JP"
-  // 速度 0.1-10 初期値:1 (倍速なら2, 半分の倍速なら0.5)
-  uttr.rate = 1.5
-  // 高さ 0-2 初期値:1
-  uttr.pitch = 1.5;
-  // 音量 0-1 初期値:1
-  uttr.volume = 0.5
+  // uttr.lang = "ja-JP"
+  // // 速度 0.1-10 初期値:1 (倍速なら2, 半分の倍速なら0.5)
+  // uttr.rate = 1.5
+  // // 高さ 0-2 初期値:1
+  // uttr.pitch = 1.5;
+  // // 音量 0-1 初期値:1
+  // uttr.volume = 0.5
 
   //発言を再生
   speechSynthesis.speak(uttr);
