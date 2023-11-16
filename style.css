@@ -40,6 +40,8 @@ div.character {
   margin-right: 0;
   margin-left: auto;
   margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  
   width:fit-content;
   max-width: 60%;
   position: relative;
