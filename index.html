@@ -64,7 +64,7 @@
       gptResponse.innerText = responseText;//output(入力欄の下にgptの返答が返される。)
       document.getElementById('Line').appendChild(gptResponse);
 
-      createAudio(responseText);//レスポンステキストが返ってきたら読み上げる。
+      await createAudio(responseText);//レスポンステキストが返ってきたら読み上げる。
     };
     //音声認識開始
     const startButton = document.querySelector(".start");
