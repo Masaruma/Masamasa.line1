@@ -195,9 +195,9 @@
 
     //speechSynthesis()　音声合成 https://qiita.com/hmmrjn/items/be29c62ba4e4a02d305c
     function createAudio(text) {
-      const uttr = new SpeechSynthesisUtterance();//音声合成のAPIを定義
+      const uttr = new SpeechSynthesisUtterance(text);//音声合成のAPIを定義
       //投げる文章
-      uttr.text = text;
+      // uttr.text = text;
       // 言語 (日本語:ja-JP, アメリカ英語:en-US, イギリス英語:en-GB, 中国語:zh-CN, 韓国語:ko-KR)
       uttr.lang = "ja-JP"
       // 速度 0.1-10 初期値:1 (倍速なら2, 半分の倍速なら0.5)
