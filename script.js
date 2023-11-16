@@ -153,8 +153,11 @@ console.log(api_key1);
     role: "assistant",
     content: response.data.choices[0].message.content,
   });
-  createAudio(response.data.choices[0].message.content);
 
+  const sound = document.querySelector('.sound').checked;
+  if (sound) {
+    createAudio(response.data.choices[0].message.content);
+  }
   return response.data.choices[0].message.content;
 }
 
